@@ -6,11 +6,13 @@ import UIKit
 
 final public class HexaLibrary {
     
-    func companyName() -> String {
+    public init() {}
+    
+    public func companyName() -> String {
         return "Hexabrain Technologies Private Limited"
     }
     
-    func companyLogo() -> UIImage? {
+    public func companyLogo() -> UIImage? {
         if let resource = Bundle.main.url(forResource: "HexaLogo", withExtension: "png") {
             return UIImage(contentsOfFile: resource.path)
         }
