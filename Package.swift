@@ -23,6 +23,9 @@ let package = Package(
             resources: [
                 .process("Resources")
             ]
+        ),
+        .target(
+            name: "Helper"
         )
     ]
 )
