@@ -11,9 +11,9 @@ final public class VidgyorPlayer {
     
     private init() {}
     
-    public static func livePlayer(accountId: String, channelId: String, channelName: String, liveTVUrl: String, prerollAdTag: String, disablePrerollAdTag: Bool, midrollAdTag: String, disableMidrollAdTag: Bool) -> LivePlayer {
+    public static func livePlayer(accountId: String, channelId: String, channelName: String, liveTVUrl: String, prerollAdTag: String, disablePrerollAdTag: Bool, midrollAdTag: String, disableMidrollAdTag: Bool, delegate: LivePlayerDelegate? = nil) -> LivePlayer {
         
-        let livePlayer = LivePlayerImplementation(accountId: accountId, channelId: channelId, channelName: channelName, liveTVUrl: liveTVUrl, prerollAdTag: prerollAdTag, disablePrerollAdTag: disablePrerollAdTag, midrollAdTag: midrollAdTag, disableMidrollAdTag: disableMidrollAdTag)
+        let livePlayer = LivePlayerImplementation(accountId: accountId, channelId: channelId, channelName: channelName, liveTVUrl: liveTVUrl, prerollAdTag: prerollAdTag, disablePrerollAdTag: disablePrerollAdTag, midrollAdTag: midrollAdTag, disableMidrollAdTag: disableMidrollAdTag, delegate: delegate)
         return livePlayer
     }
     
