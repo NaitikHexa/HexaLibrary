@@ -21,3 +21,19 @@ public protocol LivePlayerDelegate: AnyObject {
     func isAdSkip(value: Bool)
     func adError()
 }
+
+
+extension LivePlayerDelegate {
+    public func notifyPlay() {}
+    public func notifyPause() {}
+    public func contentStart() {}
+    public func showOverlay(isVisible: Bool) {}
+    public func hideOverlay(isVisible: Bool) {}
+    public func isAdPlayingCallback(isPlaying: Bool) {}
+    public func getLiveUrl(str: String) {}
+    public func videoLiveWatchDuration(value: Int) {}
+    public func isAdStart(value: Bool) {}
+    public func isAdEnd(value: Bool) {}
+    public func isAdSkip(value: Bool) {}
+    public func adError() {}
+}
