@@ -9,7 +9,7 @@ final public class HexaLibrary {
     public init() {}
     
     public func companyName() -> String {
-        return "Hexabrain Technologies Private Limited"
+        return "Hexabrain Technologies"
     }
     
     public func companyLogo() -> UIImage? {
