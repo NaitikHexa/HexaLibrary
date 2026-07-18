@@ -13,7 +13,7 @@ final public class HexaLibrary {
     }
     
     public func companyLogo() -> UIImage? {
-        if let resource = Bundle.module.url(forResource: "logo", withExtension: "png") {
+        if let resource = Bundle.module.url(forResource: "logo2", withExtension: "png") {
             return UIImage(contentsOfFile: resource.path)
         }
         
